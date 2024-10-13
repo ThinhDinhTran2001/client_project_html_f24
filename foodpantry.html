@@ -4,12 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Food Pantry</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <a href = "#main">Skip to Main Content</a>
     <header>
+        <img id="UMLogo" src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo"><br>
+        <a id="skip_main" href = "#main">Skip to Main Content</a>
         <nav>
-            <ul>
+            <ul id="nav_ul">
                 <li><a href = "index.html">Home</a></li>
                 <li><a href = "caps.html">CAPS</a></li>
                 <li><a href = "firstgen.html">First Gen</a></li>
@@ -17,30 +20,32 @@
             </ul>
         </nav>
         <h1>Food Pantry</h1>
-
     </header>
     <main id="main">
-        <div>
-            <p>
-                Welcome to the Student Food Pantry<br>
-                Hungry? We've got you covered<br>
-            </p>
-
-        </div>
-        <img src="images/Food2.jpg" alt="Food image number two">
-        <img src="images/Food1.jpg" alt="Food image number one">
-
-        <h2>Helpful Links</h2>
-        <a href="https://mbc.studentlife.umich.edu/news/">News</a>
-        <a href="https://mbc.studentlife.umich.edu/recipes/">Recipes</a>
+        <section>
+            <h2>Our Mission</h2>
+            <p>To ensure members of the University of Michigan community—whether on a tight budget or physically restrained from getting to a grocery store—receive equitable access to healthy, nutritious, and nourishing food and the ability to prepare it for themselves or others.</p>
+            <figure>
+                <img src="images/Food2.jpg" alt="Food image number one">
+            </figure>
+        </section>
+        <section>
+            <h2>Who We Are</h2> 
+                <p>College students and staff are experiencing food insecurity at alarming rates. The Maize and Blue Cupboard is here to provide an immediate and comprehensive response for the U-M community. By offering resources, educational opportunities, compassionate support and more, we help students develop the skills to make informed decisions.</p>
+            <figure>   
+                <img src="images/Food1.jpg" alt="Food image number one">
+            </figure>
+        </section>
+        <section>
+            <h2>Helpful Links</h2>
+            <ul id="caps_helpful_links_ul">
+                <li><a href="https://mbc.studentlife.umich.edu/news/">News</a></li>
+                <li><a href="https://mbc.studentlife.umich.edu/recipes/">Recipes</a></li>
+            </ul>
+        </section>
     </main>
     <footer>
-        <p>
-            Location | 420 S State St Ann Arbor, MI 48109<br>
-            Phone Number | 734-936-2794<br>
-        </p>
+        <p> More Information: <a href="https://mbc.studentlife.umich.edu">Food Pantry</a></p>
     </footer>
-    
 </body>
-
 </html>

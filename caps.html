@@ -4,12 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CAPS</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <a href = "#main">Skip to Main Content</a>
     <header>
+        <img id="UMLogo" src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo"><br>
+        <a id="skip_main" href = "#main">Skip to Main Content</a>
         <nav>
-            <ul>
+            <ul id="nav_ul">
                 <li><a href = "index.html">Home</a></li>
                 <li><a href = "caps.html">CAPS</a></li>
                 <li><a href = "firstgen.html">First Gen</a></li>
@@ -17,30 +20,33 @@
             </ul>
         </nav>
         <h1>Welcome to CAPS!</h1> 
-
     </header>
     <main id="main">
-        <div>
+        <section>
+            <h2>Our Mission</h2>
             <p>CAPS is committed to creating an environment based on our values of multicultural, multi-disciplinary and multi-theoretical practices that allow our diverse student body to access care, receive high quality services and take positive pathways to mental health.</p>
-        </div>
-
-        <h2>Here are some helpful links to get started</h2>
-        <a href = "https://caps.umich.edu/article/scheduling-appointment">Make an Appointment</a>
-        <a href = "https://caps.umich.edu/article/urgent-support">Need Urgent Support?</a>
-
-
-        <h2>We are located at the Michigan Union, if you would like in-person help</h2>
-        <img src="images/MUnion1.jpg" alt="Michigan Union image number one">
-        <img src="images/MUnion2.jpg" alt="Michigan Union image number two">
+            <figure>
+                <img src="images/MUnion1.jpg" alt="Michigan Union image number one">
+                <figcaption>(Michigan Union)</figcaption>
+            </figure>
+        </section>
+        <section>
+            <h2>Self Care</h2> 
+                <p>When faced with social injustices and bias incidents, it is extremely difficult to cope and know what to do.  Feeling overwhelmed with the current socio-political state, experiencing discrimination, or being impacted by contentious people or policies increases stress which remains correlated to negative mental health outcomes.  During these times, it remains imperative that we take care of ourselves, take care of loved ones, and take care of our campus community. We all have the power to spread kindness, celebrate diversity and inclusion, and promote social justice.</p>
+            <figure>   
+                <img src="images/MUnion2.jpg" alt="Michigan Union image number two">
+            </figure>
+        </section>
+        <section>
+            <h2>Helpful Links</h2>
+            <ul id="caps_helpful_links_ul">
+                <li><a href = "https://caps.umich.edu/article/scheduling-appointment">Make an Appointment</a></li>
+                <li><a href = "https://caps.umich.edu/article/urgent-support">Need Urgent Support?</a></li>
+            </ul>
+        </section>
     </main>
     <footer>
-        <h2>Location</h2>
-        <p> <!--<a href=""></a>--> 
-            Michigan Union<br>
-            530 South State Street<br>
-            Suite 4079<br>
-            Ann Arbor, MI 48109<br>
-        </p>
+        <p> More Information: <a href="https://caps.umich.edu">Counseling and Psychological Services</a></p>
     </footer>
     
 </body>

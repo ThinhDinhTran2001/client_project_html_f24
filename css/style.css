@@ -1,7 +1,3 @@
-UMLogo {
-    width: 100px;
-}
-
 /* header {
     background-color: #00274C;
     color: #FFFFFF;
@@ -17,51 +13,148 @@ main {
     color: black;
 } */
 
-@media only screen and (max-width: 600px) {
-    h1 {
-        /* background-color: #FFCB05; */
-        color: black;
-        align-content: center;
-        font-size: 40px;
-        font-family: Georgia, 'Times New Roman', Times, serif;
-    }
-    
-    h2 {
-        color: black;
-        font-size: large;
-        font-family: Georgia, 'Times New Roman', Times, serif;
-    }
-    
-    h3 {
-        color: black;
-        font-size: medium;
-        font-family: Georgia, 'Times New Roman', Times, serif;
-    }
-    
-    p {
-        line-height: 100px;
-    }
-    
-    img {
-        border: solid 8px #00274C;
-        padding: 16px;
-        margin:  16px;
-        border-top-right-radius:  30px;
-    }
-    
-    ul > li {
-        display: inline-block;
-        margin-left: 50px;
-        font-size: 150%;
-    }
-    
-    nav {
-        display: grid;
-        align-content: center;
-        position: sticky;
-        top: 0;
-        background-color: black;
-        color: white;
-    }    
-  }
+#UMLogo {
+    width: 100px;
+    grid-row: 1;
+}
 
+h1 {
+    grid-row-start: 1;
+    grid-column-start: 2;
+    background-color: #00274C;
+    color: #FFFFFF;
+    align-content: center;
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#skip_main{
+    grid-row: 1;
+    grid-column: 3;
+    font-size: 15px;
+    color: #FFFFFF;
+    position: absolute;
+    top: -40px;
+    justify-self: end;
+}
+
+#skip_main:focus {
+    top: 20px;
+}
+
+header {
+    /* height: 20%; */
+    display: grid;
+    grid-template-columns: 30% 60% 10%;
+    grid-template-rows: 65% 35%;
+    background-color: #00274C;
+    row-gap: 5px;
+}
+
+#nav_ul {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+
+#nav_ul > li {
+    justify-self: center;
+}
+
+#nav_ul > li > a:focus {
+    text-decoration: underline;
+}
+
+nav { 
+    grid-column: 1 / span 3;
+    grid-row-start: 2;
+    align-content: center;
+    position: sticky;
+    top: 0;
+    background-color: #00274C;
+    color: #FFFFFF;
+    border-top: solid 5px #FFCB05;
+}
+
+main {
+    /* height: 60%; */
+    background-color: #989C97;
+    color: #00274C;
+    display: grid;
+}
+
+h2 {
+    color: #00274C;
+    font-size: 25px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    justify-content: center;
+    padding: 2% 2% 2% 2%;
+}
+
+h3 {
+    color: #00274C;
+    font-size: medium;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 2% 4% 2% 4%;
+}
+
+p {
+    padding: 0% 6% 0% 6%;
+}
+
+ol {
+    padding: 2% 8% 2% 8%;
+}
+
+img {
+    border: solid 5px #00274C;
+    border-radius:  10px;
+    margin: 10px 0 10px 0;
+
+} 
+
+figure {
+    display: grid;
+    justify-content: center;
+}
+
+figure > figcaption {
+    justify-self: end;
+}
+
+footer {
+    border-top: solid 5px #FFCB05;
+    background-color: #00274C;
+    color: #FFFFFF;
+    font-size: 20px;
+}
+
+footer > p {
+    padding: 5%;
+}
+
+footer > p > a {
+    color: #FFCB05;
+    text-decoration: underline;
+}
+
+footer > p > a:focus {
+    background-color: #FFFFFF;
+    color: #00274C;
+}
+
+section > ul > li > a {
+    text-decoration: underline;
+}
+
+/* targerting specific sections and pages*/
+
+#life_outside_classroom_ul > li{
+    padding: 2% 8% 2% 8%;
+}
+
+#caps_helpful_links_ul {
+    padding-bottom: 3%;
+}
+#caps_helpful_links_ul  > li{
+    padding: 0% 6% 0% 6%;
+}
