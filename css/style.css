@@ -1,8 +1,9 @@
+/* Setting the font to sans serif to help with readability */
 body {
     font-family: sans-serif;
 }
 
-
+/* Header & Navigation */
 #UMLogo {
     width: 100px;
     grid-row: 1;
@@ -28,6 +29,7 @@ h1 {
     position: absolute;
     top: -50px;
     justify-self: end;
+    border: #FFCB05 2px solid;
 }
 
 #skip_main:focus {
@@ -69,12 +71,14 @@ nav {
     margin-top: 20px;
 }
 
+/* Main content of the site */
 main {
     background-color: #FFF;
     color: #000000;
     display: grid;
 }
 
+/* Bulleted list */
 ol li {
     list-style-type: disc;
 }
@@ -102,6 +106,7 @@ ol {
     padding: 2% 8% 2% 8%;
 }
 
+/* Adjusting size and putting border around images */
 img {
     border: solid 5px #00274C;
     border-radius:  10px;
@@ -118,6 +123,21 @@ figure > figcaption {
     justify-self: end;
 }
 
+/* Styling Sections */
+section > ul > li > a {
+    text-decoration: underline;
+}
+
+section {
+    border: #cacaca solid;
+    border-width: 2px 0px 0px 0px;
+}
+
+/* Styling footer */
+footer > p {
+    color: #FFCB05;
+}
+
 footer {
     border-top: solid 5px #FFCB05;
     background-color: #00274C;
@@ -127,19 +147,6 @@ footer {
 
 footer {
     padding: 20px;
-}
-
-footer > p {
-    color: #FFCB05;
-}
-
-section > ul > li > a {
-    text-decoration: underline;
-}
-
-section {
-    border: #cacaca solid;
-    border-width: 2px 0px 0px 0px;
 }
 
 /* targerting specific sections and pages*/
@@ -166,7 +173,9 @@ section {
     font-size: 50px;
 }
 
+/* For Desktop View */
 @media (min-width: 768px) {
+    /* Increase Sizes */
     #skip_main {
         font-size: 20px;
     }
@@ -201,6 +210,11 @@ section {
         font-size: 20px;
     }  
 
+    img {
+        width: 800px;
+    }
+
+    /* Make use of grid layout */
     main {
         display: grid;
         justify-content: center;
@@ -222,10 +236,6 @@ section {
 
     .last_section {
         border-width: 0px 2px 0px 2px;
-    }
-
-    img {
-        width: 800px;
     }
 
     footer {
